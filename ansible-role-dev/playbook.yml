@@ -2,7 +2,7 @@
 - hosts: all
   name: Set up VM for Ansible role development
 
-  tasks:
-    - name: Hello World!
-      debug:
-        msg: Hello World!
+  roles:
+    - { role: geerlingguy.repo-epel, become: true }
+    - { role: sthdev.update_packages, become: true }
+    - { role: sthdev.install_gnome, become: true}

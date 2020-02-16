@@ -1,0 +1,7 @@
+---
+- src: geerlingguy.repo-epel
+  version: 1.2.4
+- src: sthdev.update_packages
+  version: v1.0.0
+- src: sthdev.install_gnome
+  version: 1.0.0
