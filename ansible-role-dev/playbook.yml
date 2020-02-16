@@ -3,6 +3,23 @@
   name: Set up VM for Ansible role development
 
   roles:
-    - { role: geerlingguy.repo-epel, become: true }
-    - { role: sthdev.update_packages, become: true }
-    - { role: sthdev.install_gnome, become: true}
+    - role: geerlingguy.repo-epel
+      become: true
+      
+    - role: sthdev.update_packages
+      become: true
+
+    - role: sthdev.install_gnome
+      become: true
+
+    - role: geerlingguy.pip
+      pip_install_packages:
+        - docker
+      become: true
+    
+    - role: geerlingguy.docker
+      docker_compose_version: "1.25.3"
+      docker_compose_path: /usr/bin/docker-compose
+      docker_users:
+        - vagrant
+      become: true

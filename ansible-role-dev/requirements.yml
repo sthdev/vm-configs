@@ -1,4 +1,8 @@
 ---
+- src: geerlingguy.docker
+  version: 2.6.0
+- src: geerlingguy.pip
+  version: 1.3.0
 - src: geerlingguy.repo-epel
   version: 1.2.4
 - src: sthdev.update_packages
