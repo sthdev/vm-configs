@@ -1,0 +1,8 @@
+---
+- hosts: all
+  name: Set up VM for Ansible role development
+
+  tasks:
+    - name: Hello World!
+      debug:
+        msg: Hello World!
