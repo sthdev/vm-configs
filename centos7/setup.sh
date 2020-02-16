@@ -9,5 +9,7 @@ sudo yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.
 sudo yum -y update
 
 # Install Git
+sudo yum -y install git
 
-# Install Python
+# Install Ansible
+sudo yum -y install ansible
