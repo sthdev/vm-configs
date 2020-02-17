@@ -29,4 +29,8 @@
         - username: vagrant
           visual_studio_code_extensions:
             - eamodio.gitlens
+            - ms-azuretools.vscode-docker
+            - ms-python.python
+            - vscoss.vscode-ansible
+
 
